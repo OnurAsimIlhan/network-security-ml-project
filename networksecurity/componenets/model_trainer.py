@@ -23,7 +23,7 @@ import mlflow
 from urllib.parse import urlparse
 
 import dagshub
-
+dagshub.init(repo_owner='OnurAsimIlhan', repo_name='network-security-ml-project', mlflow=True)
 
 class ModelTrainer:
     def __init__(self, model_trainer_config: ModelTrainerConfig, data_transformation_artifact: DataTransformationArtifact):
